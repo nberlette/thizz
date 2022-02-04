@@ -1,6 +1,6 @@
 {
 	"name": "thizz",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"type": "module",
 	"author": {
@@ -76,7 +76,7 @@
 		"dist/isSafeInteger": "./src/isSafeInteger.js",
 		"dist/isSet": "./src/isSet.js",
 		"dist/isString": "./src/isString.js",
-    "dist/isStringObject": "./src/isStringObject.js",
+		"dist/isStringObject": "./src/isStringObject.js",
 		"dist/isSymbol": "./src/isSymbol.js",
 		"dist/isThenable": "./src/isThenable.js",
 		"dist/isUint16Array": "./src/isUint16Array.js",
@@ -90,7 +90,7 @@
 	"scripts": {
 		"prebuild": "npm run format",
 		"types": "tsc -d --emitDeclarationOnly --allowJs --checkJs",
-    "build": "bundt --minify",
+		"build": "bundt --minify",
 		"lint": "prettier --ignore-path=.prettierignore --check src/**/*",
 		"format": "prettier --ignore-path=.prettierignore --write src/**/*",
 		"test": "npm run lint"
