@@ -25,15 +25,11 @@ import { isString } from './isString';
 import { isStringObject } from './isStringObject';
 import { isSymbol } from './isSymbol';
 import { isThenable } from './isThenable';
-import { isUint16Array } from './isUint16Array';
-import { isUint32Array } from './isUint32Array';
-import { isUint8Array } from './isUint8Array';
-import { isUint8ClampedArray } from './isUint8ClampedArray';
 import { isUndefined } from './isUndefined';
 import { isWeakMap } from './isWeakMap';
 import { isWeakSet } from './isWeakSet';
 
-export {
+export default {
 	isArray,
 	isArrayBuffer,
 	isArrayLike,
@@ -61,17 +57,13 @@ export {
 	isStringObject,
 	isSymbol,
 	isThenable,
-	isUint16Array,
-	isUint32Array,
-	isUint8Array,
-	isUint8ClampedArray,
 	isUndefined,
 	isWeakMap,
 	isWeakSet,
 };
 
-declare namespace thizz {
-	export {
+declare module 'thizz' {
+	export default {
 		isArray,
 		isArrayBuffer,
 		isArrayLike,
@@ -99,13 +91,8 @@ declare namespace thizz {
 		isStringObject,
 		isSymbol,
 		isThenable,
-		isUint16Array,
-		isUint32Array,
-		isUint8Array,
-		isUint8ClampedArray,
 		isUndefined,
 		isWeakMap,
 		isWeakSet,
 	};
 }
-export default thizz;
