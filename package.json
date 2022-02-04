@@ -1,0 +1,129 @@
+{
+	"name": "thizz",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"author": {
+		"name": "Nicholas Berlette",
+		"email": "nick@berlette.com",
+		"url": "https://berlette.com"
+	},
+	"repository": "nberlette/thizz",
+	"homepage": "https://npm.im/thizz",
+	"readme": "https://github.com/nberlette/thizz#readme",
+	"bugs": {
+		"url": "https://github.com/nberlette/thizz/issues",
+		"email": "bugs@berlette.com"
+	},
+	"publishConfig": {
+		"access": "public",
+		"tag": "latest"
+	},
+	"description": "Tools to help determine value types. Thizz is what it is.",
+	"keywords": [
+		"types",
+		"typeof",
+		"is",
+		"thizz.js",
+		"utilities",
+		"helpers"
+	],
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"esnext": "./dist/index.js",
+	"types": "./index.d.ts",
+	"typings": "./index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		},
+		"./*": {
+			"import": "./dist/*/index.js",
+			"require": "./dist/*/index.cjs"
+		},
+		"./package.json": "./package.json",
+		"./index.d.ts": "./index.d.ts"
+	},
+	"files": [
+		"files",
+		"dist",
+		"dist/**/*",
+		"*.d.ts",
+		"**/*.d.ts"
+	],
+	"modes": {
+		"default": "./src/index.js",
+		"dist/isArray": "./src/isArray.js",
+		"dist/isArrayBuffer": "./src/isArrayBuffer.js",
+		"dist/isArrayLike": "./src/isArrayLike.js",
+		"dist/isBigInt": "./src/isBigInt.js",
+		"dist/isBoolean": "./src/isBoolean.js",
+		"dist/isBuffer": "./src/isBuffer.js",
+		"dist/isCatchable": "./src/isCatchable.js",
+		"dist/isDate": "./src/isDate.js",
+		"dist/isError": "./src/isError.js",
+		"dist/isFunction": "./src/isFunction.js",
+		"dist/isInteger": "./src/isInteger.js",
+		"dist/isMap": "./src/isMap.js",
+		"dist/isNaN": "./src/isNaN.js",
+		"dist/isNil": "./src/isNil.js",
+		"dist/isNull": "./src/isNull.js",
+		"dist/isNumber": "./src/isNumber.js",
+		"dist/isObject": "./src/isObject.js",
+		"dist/isObjectLiteral": "./src/isObjectLiteral.js",
+		"dist/isPromise": "./src/isPromise.js",
+		"dist/isProxy": "./src/isProxy.js",
+		"dist/isRegExp": "./src/isRegExp.js",
+		"dist/isSafeInteger": "./src/isSafeInteger.js",
+		"dist/isSet": "./src/isSet.js",
+		"dist/isString": "./src/isString.js",
+    "dist/isStringObject": "./src/isStringObject.js",
+		"dist/isSymbol": "./src/isSymbol.js",
+		"dist/isThenable": "./src/isThenable.js",
+		"dist/isUint16Array": "./src/isUint16Array.js",
+		"dist/isUint32Array": "./src/isUint32Array.js",
+		"dist/isUint8Array": "./src/isUint8Array.js",
+		"dist/isUint8ClampedArray": "./src/isUint8ClampedArray.js",
+		"dist/isUndefined": "./src/isUndefined.js",
+		"dist/isWeakMap": "./src/isWeakMap.js",
+		"dist/isWeakSet": "./src/isWeakSet.js"
+	},
+	"scripts": {
+		"prebuild": "npm run format",
+		"types": "tsc -d --emitDeclarationOnly --allowJs --checkJs",
+    "build": "bundt --minify",
+		"prepublishOnly": "npm run build",
+		"lint": "prettier --ignore-path=.prettierignore --check src/**/*",
+		"format": "prettier --ignore-path=.prettierignore --write src/**/*",
+		"test": "npm run lint"
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSameLine": true,
+		"bracketSpacing": true,
+		"embeddedLanguageFormatting": "auto",
+		"endOfLine": "lf",
+		"pluginSearchDirs": [
+			"."
+		],
+		"printWidth": 120,
+		"proseWrap": "preserve",
+		"quoteProps": "consistent",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 2,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.14",
+		"bundt": "1.1.5",
+		"esm": "3.2.25",
+		"kleur": "~4.1.4",
+		"npm-run-all": "4.1.5",
+		"prettier": "2.5.1",
+		"tsm": "2.2.1",
+		"typescript": "4.5.5"
+	}
+}

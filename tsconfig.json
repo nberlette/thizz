@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"strict": false,
+		"allowJs": true,
+		"checkJs": true,
+		"baseUrl": "./src",
+		"paths": {
+			"~/*": ["./*", "./*.d.ts"],
+			"thizz": ["./index", "./index.d.ts"],
+			"thizz/*": ["./*", "./*.d.ts"]
+		},
+		"types": ["node"],
+		"lib": ["ESNext"],
+		"module": "ES6",
+		"target": "ES2018",
+		"isolatedModules": true,
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"declarationDir": "dist",
+		"sourceMap": false,
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"suppressExcessPropertyErrors": true,
+		"suppressImplicitAnyIndexErrors": true
+	},
+	"include": ["src/**/*.js", "src/**/*.ts", "src/**/*.d.ts"],
+	"exclude": ["dist", "node_modules", "**/node_modules/**"]
+}
