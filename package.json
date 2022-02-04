@@ -48,9 +48,7 @@
 	"files": [
 		"files",
 		"dist",
-		"dist/**/*",
-		"*.d.ts",
-		"**/*.d.ts"
+		"dist/**/*"
 	],
 	"modes": {
 		"default": "./src/index.js",
@@ -93,7 +91,6 @@
 		"prebuild": "npm run format",
 		"types": "tsc -d --emitDeclarationOnly --allowJs --checkJs",
     "build": "bundt --minify",
-		"prepublishOnly": "npm run build",
 		"lint": "prettier --ignore-path=.prettierignore --check src/**/*",
 		"format": "prettier --ignore-path=.prettierignore --write src/**/*",
 		"test": "npm run lint"

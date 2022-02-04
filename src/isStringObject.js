@@ -3,7 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isStringObject (value) {
-	return value instanceof String
+export function isStringObject(value) {
+	return value instanceof String;
 }
-export default isStringObject
+export default isStringObject;
