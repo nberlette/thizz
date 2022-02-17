@@ -6,4 +6,3 @@
 export function isFunction(value) {
 	return value instanceof Function || typeof value === 'function';
 }
-export default isFunction;

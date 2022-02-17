@@ -8,7 +8,6 @@
  * // returns true
  * @link https://mdn.io/Array.isArray
  */
-declare module 'thizz/isArray' {
-  export function isArray(value: any[]): boolean;
-  export default isArray;
-}
+export function isArray(value: any[]): boolean;
+
+declare module 'thizz/isArray';

@@ -35,13 +35,12 @@
 		".": {
 			"types": "./index.d.ts",
 			"import": "./dist/index.mjs",
-			"require": "./dist/index.js",
-			"default": "./dist/index.js"
+			"require": "./dist/index.js"
 		},
 		"./*": {
-			"types": "./dist/*/index.d.ts",
-			"import": "./dist/*/index.mjs",
-			"require": "./dist/*/index.js"
+			"types": "./types/*.d.ts",
+			"import": "./dist/*.mjs",
+			"require": "./dist/*.js"
 		},
 		"./package.json": "./package.json",
 		"./index.d.ts": "./index.d.ts"

@@ -1,34 +1,3 @@
-import {isArray} from 'thizz/isArray';
-import {isArrayBuffer} from 'thizz/isArrayBuffer';
-import {isArrayLike} from 'thizz/isArrayLike';
-import {isBigInt} from 'thizz/isBigInt';
-import {isBoolean} from 'thizz/isBoolean';
-import {isBuffer} from 'thizz/isBuffer';
-import {isCatchable} from 'thizz/isCatchable';
-import {isDate} from 'thizz/isDate';
-import {isError} from 'thizz/isError';
-import {isFunction} from 'thizz/isFunction';
-import {isInteger} from 'thizz/isInteger';
-import {isMap} from 'thizz/isMap';
-import {isNaN} from 'thizz/isNaN';
-import {isNil} from 'thizz/isNil';
-import {isNull} from 'thizz/isNull';
-import {isNumber} from 'thizz/isNumber';
-import {isObject} from 'thizz/isObject';
-import {isObjectLiteral} from 'thizz/isObjectLiteral';
-import {isPromise} from 'thizz/isPromise';
-import {isProxy} from 'thizz/isProxy';
-import {isRegExp} from 'thizz/isRegExp';
-import {isSafeInteger} from 'thizz/isSafeInteger';
-import {isSet} from 'thizz/isSet';
-import {isString} from 'thizz/isString';
-import {isStringObject} from 'thizz/isStringObject';
-import {isSymbol} from 'thizz/isSymbol';
-import {isThenable} from 'thizz/isThenable';
-import {isUndefined} from 'thizz/isUndefined';
-import {isWeakMap} from 'thizz/isWeakMap';
-import {isWeakSet} from 'thizz/isWeakSet';
-
 export * from 'thizz/isArray';
 export * from 'thizz/isArrayBuffer';
 export * from 'thizz/isArrayLike';
@@ -60,35 +29,67 @@ export * from 'thizz/isUndefined';
 export * from 'thizz/isWeakMap';
 export * from 'thizz/isWeakSet';
 
-export default{
-	isArray,
-	isArrayBuffer,
-	isArrayLike,
-	isBigInt,
-	isBoolean,
-	isBuffer,
-	isCatchable,
-	isDate,
-	isError,
-	isFunction,
-	isInteger,
-	isMap,
-	isNaN,
-	isNil,
-	isNull,
-	isNumber,
-	isObject,
-	isObjectLiteral,
-	isPromise,
-	isProxy,
-	isRegExp,
-	isSafeInteger,
-	isSet,
-	isString,
-	isStringObject,
-	isSymbol,
-	isThenable,
-	isUndefined,
-	isWeakMap,
-	isWeakSet,
-};
+
+export function isTruthy (value) {
+  return !(~[false, null, ''].includes(value));
+}
+
+export function isFalsy (value) {
+  return !isTruthy(value);
+}
+
+export function isPrimitive (value) {
+  return isNumber(value) || isString(value) || isBoolean(value);
+}
+
+export function isNumeric (value) {
+  return !isNaN(parseFloat(value)) && isFinite(value);
+}
+
+export function isFinite (value) {
+  return Number.isFinite(value);
+}
+
+export function isVoid (value) {
+  return value === void 0;
+}
+
+export function isEmpty (value) {
+  if(isArray(value)) {
+    return value.length === 0;
+  } else if(isObjectLiteral(value)) {
+    return Object.keys(value).length === 0;
+  } else if(isString(value)) {
+    return value === '';
+  } else {
+    return value == null;
+  }
+}
+
+export function isContract (fn, context) {
+  return (context || window) ? fn.call(context || window) : fn();
+}
+
+export function isElement (mixed) {
+  return (mixed instanceof Element || mixed instanceof Node || mixed instanceof DocumentElement || mixed instanceof HTMLDocument || mixed instanceof Window);
+}
+
+export function isPureElement (element) {
+  return el.nodeType !== 3;
+}
+
+export function isTextNode (node) {
+  return node.nodeType === 3;
+}
+
+export function isCommentNode (node) {
+  return node.nodeType === 8;
+}
+
+export function isHTMLElement (element) {
+  return element.nodeType === 1;
+}
+
+export function isWindow (value) {
+  return (value instanceof Window || Object.prototype.toString.call(value) === '[object global]');
+}

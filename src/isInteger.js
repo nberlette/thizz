@@ -8,4 +8,3 @@
 export function isInteger(value) {
 	return Number.isInteger(value);
 }
-export default isInteger;

@@ -7,4 +7,4 @@
 export function isBuffer(value) {
 	return value instanceof Buffer;
 }
-export default isBuffer;
+

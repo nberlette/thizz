@@ -1,19 +1,17 @@
 /**
+ * @preserve
  * @package thizz
  * @license MIT
- * @author Nicholas Berlette <nick@berlette.com>
- * @link https://npm.im/thizz
- * @preserve
+ * @nberlette <nick@berlette.com>
  */
-declare module thizz {
+declare module thizz;
 	/**
 	 * Returns `true` if value is an Array; otherwise, returns `false`.
 	 * @param {any[]} value - target value to inspect
 	 * @returns {boolean} `boolean`  
 	 * 
 	 * @package thizz
-	 * @example isArray([1, 2, 3]); 
-	 * // returns true
+	 * @example isArray([1, 2, 3]); // true
 	 * @link https://mdn.io/Array.isArray
 	 */
 	export function isArray(value: any[]): boolean;
@@ -236,6 +234,3 @@ declare module thizz {
 	 * @returns {boolean} `boolean`
 	 */
 	export function isWeakSet(value: WeakSet<any>): boolean;
-
-}
-

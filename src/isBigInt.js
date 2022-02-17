@@ -7,4 +7,3 @@
 export function isBigInt(value) {
 	return value instanceof BigInt;
 }
-export default isBigInt;

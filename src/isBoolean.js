@@ -8,4 +8,3 @@
 export function isBoolean(value) {
 	return value instanceof Boolean || value === true || value === false;
 }
-export default isBoolean;

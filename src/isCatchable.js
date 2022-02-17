@@ -7,4 +7,3 @@
 export function isCatchable(value) {
 	return 'catch' in value && typeof value.catch == 'function';
 }
-export default isCatchable;

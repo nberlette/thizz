@@ -12,4 +12,3 @@ export function isArrayLike(value) {
 	}
 	return false;
 }
-export default isArrayLike;
