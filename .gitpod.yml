@@ -2,7 +2,9 @@ image: nberlette/gitpod-enhanced
 
 tasks:
   - before: pnpm install
-    init: pnpm add -g vercel typescript tsm @types/node >/dev/null 2>&1
+    init: |
+      pnpm install 2>/dev/null;
+      pnpm add -g vercel typescript tsm @types/node 2>/dev/null;
     command: pnpm lint --if-present
 
 ports:
@@ -30,13 +32,12 @@ vscode:
     - eamodio.gitlens
     - cschleiden.vscode-github-actions
     - vsls-contrib.gistfs
-    - simonsiefke.prettier-vscode
+    - esbenp.prettier-vscode
     - editorconfig.editorconfig
     - jock.svg
     - redhat.vscode-yaml
     - gamunu.vscode-yarn
     - jacano.vscode-pnpm
-    - eg2.vscode-npm-script
     - christian-kohler.npm-intellisense
     - christian-kohler.path-intellisense
     - davidanson.vscode-markdownlint
