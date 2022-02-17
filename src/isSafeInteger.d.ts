@@ -7,7 +7,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Number.isSafeInteger
  */
-declare module 'isSafeInteger' {
+declare module 'thizz/isSafeInteger' {
   export function isSafeInteger(value: any): boolean;
   export default isSafeInteger;
 }

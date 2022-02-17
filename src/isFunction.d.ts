@@ -3,7 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isFunction' {
+declare module 'thizz/isFunction' {
   export function isFunction(value: any): boolean;
   export default isFunction;
 }

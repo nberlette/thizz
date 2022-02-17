@@ -3,7 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isWeakMap' {
+declare module 'thizz/isWeakMap' {
   export function isWeakMap(value: WeakMap<any, any>): boolean;
   export default isWeakMap;
 }

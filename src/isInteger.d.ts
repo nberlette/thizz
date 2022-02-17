@@ -5,7 +5,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Number.isInteger
  */
-declare module 'isInteger' {
+declare module 'thizz/isInteger' {
   export function isInteger(value: number): boolean;
   export default isInteger;
 }

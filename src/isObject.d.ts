@@ -3,7 +3,7 @@
  * @param {object} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isObject' {
+declare module 'thizz/isObject' {
   export function isObject(value: object): boolean;
   export default isObject;
 }

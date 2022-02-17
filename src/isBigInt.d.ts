@@ -4,7 +4,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/BigInt
  */
-declare module 'isBigInt' {
+declare module 'thizz/isBigInt' {
   export function isBigInt(value: any): boolean;
   export default isBigInt;
 }

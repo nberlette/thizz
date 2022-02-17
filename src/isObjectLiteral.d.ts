@@ -3,7 +3,7 @@
  * @param {object} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isObjectLiteral' {
+declare module 'thizz/isObjectLiteral' {
   export function isObjectLiteral(value: object): boolean;
   export default isObjectLiteral;
 }

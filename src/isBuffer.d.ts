@@ -4,7 +4,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Buffer
  */
-declare module 'isBuffer' {
+declare module 'thizz/isBuffer' {
   export function isBuffer(value: any): boolean;
   export default isBuffer;
 }

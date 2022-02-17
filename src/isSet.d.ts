@@ -3,7 +3,7 @@
  * @param {Set} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isSet' {
+declare module 'thizz/isSet' {
   export function isSet(value: Set<any>): boolean;
   export default isSet;
 }

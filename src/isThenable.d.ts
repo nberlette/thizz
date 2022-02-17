@@ -4,7 +4,7 @@
  * @see isPromise
  * @link https://mdn.io/Promise.then
  */
-declare module 'isThenable' {
+declare module 'thizz/isThenable' {
   export function isThenable(value: any): boolean;
   export default isThenable;
 }

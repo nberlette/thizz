@@ -4,7 +4,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/ArrayBuffer
  */
-declare module 'isArrayBuffer' {
+declare module 'thizz/isArrayBuffer' {
 	export function isArrayBuffer(value: ArrayBuffer | any): boolean;
 	export default isArrayBuffer;
 }

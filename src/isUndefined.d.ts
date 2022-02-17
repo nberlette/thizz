@@ -3,7 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isUndefined' {
+declare module 'thizz/isUndefined' {
   export function isUndefined(value: any): boolean;
   export default isUndefined;
 }

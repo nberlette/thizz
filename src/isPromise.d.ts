@@ -3,7 +3,7 @@
  * @param {Promise} value - target value to inspect
  * @returns {boolean} `boolean`
 */
-declare module 'isPromise' {
+declare module 'thizz/isPromise' {
   export function isPromise(value: Promise<any>): boolean;
   export default isPromise;
 }

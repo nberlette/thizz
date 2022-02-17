@@ -3,7 +3,7 @@
  * @param {Date} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isDate' {
+declare module 'thizz/isDate' {
   export function isDate(value: Date): boolean;
   export default isDate;
 }

@@ -4,7 +4,7 @@
  * @param {number} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isNaN' {
+declare module 'thizz/isNaN' {
   export function isNaN(value: number): boolean;
   export default isNaN;
 }

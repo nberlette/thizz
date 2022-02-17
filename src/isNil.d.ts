@@ -4,7 +4,7 @@
  * @returns {boolean} `boolean`
  * @see thizz
  */
-declare module 'isNil' {
+declare module 'thizz/isNil' {
   export function isNil(value: any): boolean;
   export default isNil;
 }

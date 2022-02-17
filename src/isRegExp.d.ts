@@ -3,7 +3,7 @@
  * @param {RegExp} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isRegExp' {
+declare module 'thizz/isRegExp' {
   export function isRegExp(value: RegExp): boolean;
   export default isRegExp;
 }

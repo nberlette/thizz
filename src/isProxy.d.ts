@@ -3,7 +3,7 @@
  * @param {Proxy} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isProxy' {
+declare module 'thizz/isProxy' {
   export function isProxy(value: ProxyConstructor): boolean;
   export default isProxy;
 }

@@ -5,7 +5,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Boolean
  */
-declare module 'isBoolean' {
+declare module 'thizz/isBoolean' {
   export function isBoolean(value: any): boolean;
   export default isBoolean;
 }

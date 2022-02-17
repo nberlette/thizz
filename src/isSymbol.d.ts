@@ -3,7 +3,7 @@
  * @param {Symbol} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isSymbol' {
+declare module 'thizz/isSymbol' {
   export function isSymbol(value: Symbol): boolean;
   export default isSymbol;
 }

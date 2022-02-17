@@ -4,7 +4,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/ArrayLike
  */
-declare module 'isArrayLike' {
+declare module 'thizz/isArrayLike' {
   export function isArrayLike(value: any): boolean;
   export default isArrayLike;
 }

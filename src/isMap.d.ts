@@ -3,7 +3,7 @@
  * @param {Map} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-declare module 'isMap' {
+declare module 'thizz/isMap' {
   export function isMap(value: Map<any, any>): boolean;
   export default isMap;
 }
