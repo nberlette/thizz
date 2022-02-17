@@ -13,6 +13,7 @@
 		"lib": ["ESNext"],
 		"module": "ES6",
 		"target": "ES2018",
+		"noEmit": true,
 		"isolatedModules": true,
 		"allowSyntheticDefaultImports": true,
 		"declaration": true,
@@ -25,6 +26,6 @@
 		"suppressExcessPropertyErrors": true,
 		"suppressImplicitAnyIndexErrors": true
 	},
-	"include": ["src/**/*.js", "src/**/*.ts", "src/**/*.d.ts"],
+	"include": ["**/*.js", "**/*.ts", "**/*.d.ts"],
 	"exclude": ["dist", "node_modules", "**/node_modules/**"]
 }
