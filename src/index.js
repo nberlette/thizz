@@ -1,108 +1,75 @@
-import { isArray } from './isArray';
-import { isArrayBuffer } from './isArrayBuffer';
-import { isArrayLike } from './isArrayLike';
-import { isBigInt } from './isBigInt';
-import { isBoolean } from './isBoolean';
-import { isBuffer } from './isBuffer';
-import { isCatchable } from './isCatchable';
-import { isDate } from './isDate';
-import { isError } from './isError';
-import { isFunction } from './isFunction';
-import { isInteger } from './isInteger';
-import { isMap } from './isMap';
-import { isNaN } from './isNaN';
-import { isNil } from './isNil';
-import { isNull } from './isNull';
-import { isNumber } from './isNumber';
-import { isObject } from './isObject';
-import { isObjectLiteral } from './isObjectLiteral';
-import { isPromise } from './isPromise';
-import { isProxy } from './isProxy';
-import { isRegExp } from './isRegExp';
-import { isSafeInteger } from './isSafeInteger';
-import { isSet } from './isSet';
-import { isString } from './isString';
-import { isStringObject } from './isStringObject';
-import { isSymbol } from './isSymbol';
-import { isThenable } from './isThenable';
-import { isUint16Array } from './isUint16Array';
-import { isUint32Array } from './isUint32Array';
-import { isUint8Array } from './isUint8Array';
-import { isUint8ClampedArray } from './isUint8ClampedArray';
-import { isUndefined } from './isUndefined';
-import { isWeakMap } from './isWeakMap';
-import { isWeakSet } from './isWeakSet';
+/**
+ * @module thizz/dist/index.js
+ * @package thizz
+ * @version 1.0.5
+ * @license MIT
+ * @author Nicholas Berlette <nick@berlette.com> (https://github.com/nberlette)
+ * @preserve MIT (c) 2022 Nicholas Berlette <nick@berlette.com>
+ */
+export * from './isArray';
+export * from './isArrayBuffer';
+export * from './isArrayLike';
+export * from './isBigInt';
+export * from './isBoolean';
+export * from './isBuffer';
+export * from './isCatchable';
+export * from './isDate';
+export * from './isError';
+export * from './isFunction';
+export * from './isInteger';
+export * from './isMap';
+export * from './isNaN';
+export * from './isNil';
+export * from './isNull';
+export * from './isNumber';
+export * from './isObject';
+export * from './isObjectLiteral';
+export * from './isPromise';
+export * from './isProxy';
+export * from './isRegExp';
+export * from './isSafeInteger';
+export * from './isSet';
+export * from './isString';
+export * from './isStringObject';
+export * from './isSymbol';
+export * from './isThenable';
+export * from './isUndefined';
+export * from './isWeakMap';
+export * from './isWeakSet';
 
-export {
-	isArray,
-	isArrayBuffer,
-	isArrayLike,
-	isBigInt,
-	isBoolean,
-	isBuffer,
-	isCatchable,
-	isDate,
-	isError,
-	isFunction,
-	isInteger,
-	isMap,
-	isNaN,
-	isNil,
-	isNull,
-	isNumber,
-	isObject,
-	isObjectLiteral,
-	isPromise,
-	isProxy,
-	isRegExp,
-	isSafeInteger,
-	isSet,
-	isString,
-	isStringObject,
-	isSymbol,
-	isThenable,
-	isUint16Array,
-	isUint32Array,
-	isUint8Array,
-	isUint8ClampedArray,
-	isUndefined,
-	isWeakMap,
-	isWeakSet,
-};
-
-export default {
-	isArray,
-	isArrayBuffer,
-	isArrayLike,
-	isBigInt,
-	isBoolean,
-	isBuffer,
-	isCatchable,
-	isDate,
-	isError,
-	isFunction,
-	isInteger,
-	isMap,
-	isNaN,
-	isNil,
-	isNull,
-	isNumber,
-	isObject,
-	isObjectLiteral,
-	isPromise,
-	isProxy,
-	isRegExp,
-	isSafeInteger,
-	isSet,
-	isString,
-	isStringObject,
-	isSymbol,
-	isThenable,
-	isUint16Array,
-	isUint32Array,
-	isUint8Array,
-	isUint8ClampedArray,
-	isUndefined,
-	isWeakMap,
-	isWeakSet,
-};
+// export {
+// 	isArray,
+// 	isArrayBuffer,
+// 	isArrayLike,
+// 	isBigInt,
+// 	isBoolean,
+// 	isBuffer,
+// 	isCatchable,
+// 	isDate,
+// 	isError,
+// 	isFunction,
+// 	isInteger,
+// 	isMap,
+// 	isNaN,
+// 	isNil,
+// 	isNull,
+// 	isNumber,
+// 	isObject,
+// 	isObjectLiteral,
+// 	isPromise,
+// 	isProxy,
+// 	isRegExp,
+// 	isSafeInteger,
+// 	isSet,
+// 	isString,
+// 	isStringObject,
+// 	isSymbol,
+// 	isThenable,
+// 	isUint16Array,
+// 	isUint32Array,
+// 	isUint8Array,
+// 	isUint8ClampedArray,
+// 	isUndefined,
+// 	isWeakMap,
+// 	isWeakSet,
+// };
