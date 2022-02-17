@@ -1,12 +1,10 @@
 {
 	"name": "thizz",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"license": "MIT",
-	"type": "module",
 	"author": {
 		"name": "Nicholas Berlette",
-		"email": "nick@berlette.com",
-		"url": "https://berlette.com"
+		"email": "nick@berlette.com"
 	},
 	"repository": "nberlette/thizz",
 	"homepage": "https://npm.im/thizz",
@@ -24,23 +22,25 @@
 		"types",
 		"typeof",
 		"is",
-		"thizz.js",
-		"utilities",
-		"helpers"
+		"kind",
+		"thizz",
+		"utility",
+		"helper"
 	],
 	"main": "./dist/index.js",
-	"module": "./dist/index.js",
-	"esnext": "./dist/index.js",
+	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"typings": "./dist/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.cjs"
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
 		},
 		"./*": {
-			"import": "./dist/*/index.js",
-			"require": "./dist/*/index.cjs"
+			"types": "./dist/*/index.d.ts",
+			"import": "./dist/*/index.mjs",
+			"require": "./dist/*/index.js"
 		},
 		"./package.json": "./package.json",
 		"./index.d.ts": "./dist/index.d.ts"
@@ -84,12 +84,14 @@
 		"dist/isWeakSet": "./src/isWeakSet.js"
 	},
 	"scripts": {
-		"prebuild": "npm run format",
-		"types": "tsc -d --emitDeclarationOnly --allowJs --checkJs",
+		"prebuild": "ni; nr format",
 		"build": "bundt --minify",
+		"clean": "rm -rf files dist",
+		"types": "tsc -d --emitDeclarationOnly --allowJs --checkJs",
 		"lint": "prettier --ignore-path=.prettierignore --check src/**/*",
-		"format": "prettier --ignore-path=.prettierignore --write src/**/*",
-		"test": "npm run lint"
+		"format": "nr lint -- --write",
+		"test": "nr lint",
+		"pretest": "ni"
 	},
 	"prettier": {
 		"arrowParens": "avoid",
@@ -110,9 +112,9 @@
 		"useTabs": true
 	},
 	"devDependencies": {
-		"@types/node": "^17.0.14",
+		"@antfu/ni": "0.13.0",
+		"@types/node": "17.0.14",
 		"bundt": "1.1.5",
-		"npm-run-all": "4.1.5",
 		"prettier": "2.5.1",
 		"typescript": "4.5.5"
 	}
