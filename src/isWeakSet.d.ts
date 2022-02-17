@@ -1,7 +1,9 @@
 /**
  * Returns `true` if value is an instance of `WeakSet`; otherwise, returns `false`.
- * @param {WeakSet} value - target value to inspect
+ * @param {*} value - `WeakSet` target to typecheck
  * @returns {boolean} `boolean`
  */
-export function isWeakSet(value: WeakSet<any>): boolean;
-export default isWeakSet;
+declare module 'isWeakSet' {
+  export function isWeakSet(value: WeakSet<any>): boolean;
+  export default isWeakSet;
+}

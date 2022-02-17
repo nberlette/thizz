@@ -3,5 +3,7 @@
  * @param {Symbol} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isSymbol(value: Symbol): boolean;
-export default isSymbol;
+declare module 'isSymbol' {
+  export function isSymbol(value: Symbol): boolean;
+  export default isSymbol;
+}

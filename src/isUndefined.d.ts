@@ -3,5 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isUndefined(value: any): boolean;
-export default isUndefined;
+declare module 'isUndefined' {
+  export function isUndefined(value: any): boolean;
+  export default isUndefined;
+}

@@ -3,5 +3,7 @@
  * @param {RegExp} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isRegExp(value: RegExp): boolean;
-export default isRegExp;
+declare module 'isRegExp' {
+  export function isRegExp(value: RegExp): boolean;
+  export default isRegExp;
+}

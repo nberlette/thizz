@@ -4,5 +4,7 @@
  * @param {number} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isNaN(value: number): boolean;
-export default isNaN;
+declare module 'isNaN' {
+  export function isNaN(value: number): boolean;
+  export default isNaN;
+}

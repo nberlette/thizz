@@ -3,5 +3,7 @@
  * @param {Set} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isSet(value: Set<any>): boolean;
-export default isSet;
+declare module 'isSet' {
+  export function isSet(value: Set<any>): boolean;
+  export default isSet;
+}

@@ -3,5 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isNumber(value: any): boolean;
-export default isNumber;
+declare module 'isNumber' {
+  export function isNumber(value: any): boolean;
+  export default isNumber;
+}

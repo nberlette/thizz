@@ -3,5 +3,7 @@
  * @param {Proxy} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isProxy(value: ProxyConstructor): boolean;
-export default isProxy;
+declare module 'isProxy' {
+  export function isProxy(value: ProxyConstructor): boolean;
+  export default isProxy;
+}

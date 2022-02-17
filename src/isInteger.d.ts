@@ -5,5 +5,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Number.isInteger
  */
-export function isInteger(value: number): boolean;
-export default isInteger;
+declare module 'isInteger' {
+  export function isInteger(value: number): boolean;
+  export default isInteger;
+}

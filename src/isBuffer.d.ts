@@ -4,5 +4,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Buffer
  */
-export function isBuffer(value: any): boolean;
-export default isBuffer;
+declare module 'isBuffer' {
+  export function isBuffer(value: any): boolean;
+  export default isBuffer;
+}

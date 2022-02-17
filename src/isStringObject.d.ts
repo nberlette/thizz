@@ -3,5 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isStringObject(value: any): boolean;
-export default isStringObject;
+declare module 'isStringObject' {
+  export function isStringObject(value: any): boolean;
+  export default isStringObject;
+}

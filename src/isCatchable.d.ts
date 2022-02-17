@@ -4,5 +4,7 @@
  * @see isPromise
  * @link https://mdn.io/Promise.catch
  */
-export function isCatchable(value: any): boolean;
-export default isCatchable;
+declare module 'isCatchable' {
+  export function isCatchable(value: any): boolean;
+  export default isCatchable;
+}

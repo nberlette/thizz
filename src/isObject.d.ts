@@ -3,5 +3,7 @@
  * @param {object} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isObject(value: object): boolean;
-export default isObject;
+declare module 'isObject' {
+  export function isObject(value: object): boolean;
+  export default isObject;
+}

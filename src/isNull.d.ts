@@ -3,5 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isNull(value: any): boolean;
-export default isNull;
+declare module 'isNull' {
+  export function isNull(value: any): boolean;
+  export default isNull;
+}

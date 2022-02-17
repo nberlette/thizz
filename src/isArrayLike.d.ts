@@ -4,5 +4,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/ArrayLike
  */
-export function isArrayLike(value: any): boolean;
-export default isArrayLike;
+declare module 'isArrayLike' {
+  export function isArrayLike(value: any): boolean;
+  export default isArrayLike;
+}

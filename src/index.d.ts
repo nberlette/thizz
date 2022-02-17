@@ -1,98 +1,32 @@
-import { isArray } from './isArray';
-import { isArrayBuffer } from './isArrayBuffer';
-import { isArrayLike } from './isArrayLike';
-import { isBigInt } from './isBigInt';
-import { isBoolean } from './isBoolean';
-import { isBuffer } from './isBuffer';
-import { isCatchable } from './isCatchable';
-import { isDate } from './isDate';
-import { isError } from './isError';
-import { isFunction } from './isFunction';
-import { isInteger } from './isInteger';
-import { isMap } from './isMap';
-import { isNaN } from './isNaN';
-import { isNil } from './isNil';
-import { isNull } from './isNull';
-import { isNumber } from './isNumber';
-import { isObject } from './isObject';
-import { isObjectLiteral } from './isObjectLiteral';
-import { isPromise } from './isPromise';
-import { isProxy } from './isProxy';
-import { isRegExp } from './isRegExp';
-import { isSafeInteger } from './isSafeInteger';
-import { isSet } from './isSet';
-import { isString } from './isString';
-import { isStringObject } from './isStringObject';
-import { isSymbol } from './isSymbol';
-import { isThenable } from './isThenable';
-import { isUndefined } from './isUndefined';
-import { isWeakMap } from './isWeakMap';
-import { isWeakSet } from './isWeakSet';
-
-export default {
-	isArray,
-	isArrayBuffer,
-	isArrayLike,
-	isBigInt,
-	isBoolean,
-	isBuffer,
-	isCatchable,
-	isDate,
-	isError,
-	isFunction,
-	isInteger,
-	isMap,
-	isNaN,
-	isNil,
-	isNull,
-	isNumber,
-	isObject,
-	isObjectLiteral,
-	isPromise,
-	isProxy,
-	isRegExp,
-	isSafeInteger,
-	isSet,
-	isString,
-	isStringObject,
-	isSymbol,
-	isThenable,
-	isUndefined,
-	isWeakMap,
-	isWeakSet,
-};
-
 declare module 'thizz' {
-	export default {
-		isArray,
-		isArrayBuffer,
-		isArrayLike,
-		isBigInt,
-		isBoolean,
-		isBuffer,
-		isCatchable,
-		isDate,
-		isError,
-		isFunction,
-		isInteger,
-		isMap,
-		isNaN,
-		isNil,
-		isNull,
-		isNumber,
-		isObject,
-		isObjectLiteral,
-		isPromise,
-		isProxy,
-		isRegExp,
-		isSafeInteger,
-		isSet,
-		isString,
-		isStringObject,
-		isSymbol,
-		isThenable,
-		isUndefined,
-		isWeakMap,
-		isWeakSet,
-	};
+	export { isArray } from './dist/isArray';
+	export { isArrayBuffer } from './dist/isArrayBuffer';
+	export { isArrayLike } from './dist/isArrayLike';
+	export { isBigInt } from './dist/isBigInt';
+	export { isBoolean } from './dist/isBoolean';
+	export { isBuffer } from './dist/isBuffer';
+	export { isCatchable } from './dist/isCatchable';
+	export { isDate } from './dist/isDate';
+	export { isError } from './dist/isError';
+	export { isFunction } from './dist/isFunction';
+	export { isInteger } from './dist/isInteger';
+	export { isMap } from './dist/isMap';
+	export { isNaN } from './dist/isNaN';
+	export { isNil } from './dist/isNil';
+	export { isNull } from './dist/isNull';
+	export { isNumber } from './dist/isNumber';
+	export { isObject } from './dist/isObject';
+	export { isObjectLiteral } from './dist/isObjectLiteral';
+	export { isPromise } from './dist/isPromise';
+	export { isProxy } from './dist/isProxy';
+	export { isRegExp } from './dist/isRegExp';
+	export { isSafeInteger } from './dist/isSafeInteger';
+	export { isSet } from './dist/isSet';
+	export { isString } from './dist/isString';
+	export { isStringObject } from './dist/isStringObject';
+	export { isSymbol } from './dist/isSymbol';
+	export { isThenable } from './dist/isThenable';
+	export { isUndefined } from './dist/isUndefined';
+	export { isWeakMap } from './dist/isWeakMap';
+	export { isWeakSet } from './dist/isWeakSet';
 }

@@ -7,5 +7,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Number.isSafeInteger
  */
-export function isSafeInteger(value: any): boolean;
-export default isSafeInteger;
+declare module 'isSafeInteger' {
+  export function isSafeInteger(value: any): boolean;
+  export default isSafeInteger;
+}

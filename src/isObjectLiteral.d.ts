@@ -3,5 +3,7 @@
  * @param {object} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isObjectLiteral(value: object): boolean;
-export default isObjectLiteral;
+declare module 'isObjectLiteral' {
+  export function isObjectLiteral(value: object): boolean;
+  export default isObjectLiteral;
+}

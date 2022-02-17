@@ -5,6 +5,6 @@
  * @link https://mdn.io/ArrayBuffer
  */
 declare module 'isArrayBuffer' {
-  export function isArrayBuffer(value: ArrayBuffer | any): boolean;
-  export default isArrayBuffer;
+	export function isArrayBuffer(value: ArrayBuffer | any): boolean;
+	export default isArrayBuffer;
 }

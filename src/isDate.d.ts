@@ -3,5 +3,7 @@
  * @param {Date} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isDate(value: Date): boolean;
-export default isDate;
+declare module 'isDate' {
+  export function isDate(value: Date): boolean;
+  export default isDate;
+}

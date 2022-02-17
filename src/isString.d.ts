@@ -3,5 +3,7 @@
  * @param {*} value - target value to inspect
  * @returns {boolean} `boolean`
  */
-export function isString(value: any): boolean;
-export default isString;
+declare module 'isString' {
+  export function isString(value: any): boolean;
+  export default isString;
+}

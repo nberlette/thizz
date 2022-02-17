@@ -5,5 +5,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/Boolean
  */
-export function isBoolean(value: any): boolean;
-export default isBoolean;
+declare module 'isBoolean' {
+  export function isBoolean(value: any): boolean;
+  export default isBoolean;
+}

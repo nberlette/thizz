@@ -4,5 +4,7 @@
  * @returns {boolean} `boolean`
  * @link https://mdn.io/BigInt
  */
-export function isBigInt(value: any): boolean;
-export default isBigInt;
+declare module 'isBigInt' {
+  export function isBigInt(value: any): boolean;
+  export default isBigInt;
+}
